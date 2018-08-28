@@ -1,3 +1,7 @@
+# About
+This is a simple script that sends e-mails. To be used to send e-mails from bash - usually when experiments start or end.
+It does not involve any integration in existing code or something. After you complete the setup, just call the script_started.sh before you start the experiment and script_ended.sh. 
+
 # Setup
 To install this script you need an e-mail account with username and password
 
@@ -51,3 +55,6 @@ subject="[${server_info}, screen:$STY] Script started"
 msg="Check the script at: hostname: $(hostname); \n cuda_device:$CUDA_VISIBLE_DEVICES \n script_name:${script_name} \n run_name:${run_name} \n log file: ${log_file}"
 ```
 
+# Test 
+
+Call test.sh to test if it is correctly set!
